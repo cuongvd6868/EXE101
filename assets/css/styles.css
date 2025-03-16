@@ -1,0 +1,501 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg: #10375c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+/* Header */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2e2a35;
+    padding: 15px 30px;
+    color: white;
+    /* border-radius: 10px; */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4d6d;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 200px;
+}
+
+.sub-logo {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-bar input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.user-icon {
+    display: flex;
+    gap: 15px;
+}
+.btn-gen {
+    background: rgb(255, 255, 71);
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.btn-gen :hover {
+    opacity: 0.9;
+}
+
+/* Service Section */
+.header-bottom {
+    height: 100vh;
+}
+.service {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    margin-top: 20px;
+    padding: 0 100px;
+}
+
+.service-text {
+    width: 70%;
+}
+
+.service-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.book {
+    background: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+.skip {
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+
+/* Service Image */
+.service-image {
+    width: 50%;
+    position: relative;
+}
+
+
+.service-image img {
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.price-box {
+    background: rgba(255, 255, 0, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    text-align: center;
+    width: 450px;
+    opacity: 0.8;
+    top: 400px;
+    height: 150px;
+}
+
+.price-box p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.price-box span {
+    font-size: 14px;
+}
+
+.price-box del {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+/* Feedback Section */
+.feedback {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 100px;
+}
+
+.gray-box {
+    width: 350px;
+    height: 60px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.avatars {
+    display: flex;
+}
+
+.avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -10px;
+}
+
+.feedback p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feedback span {
+    color: #ff4d6d;
+    font-size: 20px;
+}
+
+
+/* popular this week */
+.banner-hor {
+    background: rgb(25, 22, 29);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner-hor h3 {
+    color: rgb(237, 97, 117);
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+.popular-section {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #fff;
+}
+
+.popular-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #bd4c65;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.popular-list {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.popular-item {
+    width: 220px;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popular-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-item img:hover {
+    transform: scale(1.05); /* Phóng to nhẹ 5% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Bóng đổ */
+}
+
+
+.popular-item .nail {
+    height: 70%;
+}
+
+.nail-price {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    width: 100%;
+    height: 100%;
+}
+.nail-price h3:first-of-type {
+    font-size: 3rem;
+    font-weight: 1000;
+    color: #fff;
+    padding-top: 22px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.nail-price h3:nth-of-type(2) {
+    font-size: 3rem;
+    font-weight: 1000;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container-banner {
+    display: flex;
+    height: 90vh;
+}
+.container-banner__img{
+    width: 50%;
+    background-color: rgb(255, 202, 210);
+    position: relative;
+}
+.container-banner__img .a1 {
+    width: 300px;
+    height: 400px;
+    border-radius: 2%;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+.container-banner__img .a2 {
+    width: 300px;
+    height: 400px;
+    border-radius: 2%;
+    position: absolute;
+    top: 120px;
+    left: 420px;
+
+}
+.img-detail {
+    background-color: rgb(255, 202, 210);
+    width: 50%;
+}
+.img-detail h2 {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(150, 61, 75);
+    margin-left: 50px;
+    margin-top: 120px;
+    font-size: 5rem;
+    font-weight: 1000;
+    width: 300px;
+}
+.img-detail p {
+    color: rgb(195, 82, 98);
+    font-size: 2rem;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 550px;
+    line-height: 2;
+}
+
+
+/* Tổng thể */
+.wrapper {
+    font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.logo span {
+    color: #FFF;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    background: rgb(24, 24, 33);
+    padding: 40px 0;
+}
+
+.content {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* Cột trong footer */
+.footer-column {
+    margin-right: 60px;
+    color: #A9B3BB;
+}
+
+.footer-column:last-child {
+    margin-right: 0;
+}
+
+/* Tiêu đề */
+.h3-top,
+.h3-bottom {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.h3-bottom {
+    margin-top: 20px;
+}
+
+/* Danh sách */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    font-size: 1.4rem;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+/* Subscribe */
+.footer-subscribe form {
+    display: flex;
+    align-items: center;
+}
+
+.email-input {
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background-color: transparent;
+    padding: 5px 10px;
+    color: #FFF;
+}
+
+.email-input::placeholder {
+    color: #FFF;
+    font-size: 1.4rem;
+}
+
+.btn-mail {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background: #FF6A88;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-mail:hover {
+    background: #FF9A8B;
+}
+
+/* Ảnh cuối */
+.rectangle {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logo_top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo_top img{
+    width: 50px;
+}
+.logo_top h4 {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: rgb(197, 82, 98);
+}
+
